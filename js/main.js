@@ -40,6 +40,17 @@ jQuery(document).ready(function($) {
 
 
     /*---------------------------
+                                  Sliders
+    ---------------------------*/
+    $('.charther-slider').slick({
+        dots: false,
+        arrows: true,
+        slidesToShow: 5,
+        slidesToScroll: 1
+    })
+
+
+    /*---------------------------
                                   Magnific popup
     ---------------------------*/
     $('.magnific').magnificPopup({
