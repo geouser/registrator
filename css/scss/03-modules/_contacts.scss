@@ -1,0 +1,51 @@
+.contacts {
+    border-bottom: 2px solid #B3B3BD;
+    padding-bottom: 32px;
+
+    .row {
+        @include flex($alignI: flex-start);
+    }
+
+    &__address,
+    &__phone {
+        width: 50%;
+    }
+
+    &__address {
+        text-align: left;
+    }
+
+    &__phone {
+        text-align: right;
+    }
+}
+
+
+
+.has-devider {
+    position: relative;
+
+    &:before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $pink;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -4px;
+    }
+
+    &:after {
+        content: '';
+        width: 1px;
+        height: 100%;
+        top: 18px;
+        bottom: -18px;
+        background-color: $grey;
+        position: absolute;
+        left: 50%;
+        margin-left: -0.5px;
+    }
+}

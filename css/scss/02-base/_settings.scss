@@ -13,6 +13,13 @@ body {
 a {
     color: inherit;
 }
+h2 {
+    font-size: $ssb;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: $purple;
+    margin-bottom: 50px;
+}
 
 // lAYOUT
 // ---------------------------
@@ -20,4 +27,7 @@ a {
 	width: 1200px;
 	margin: 0 auto;
 	text-align: center;
+}
+section {
+    padding: 60px 0 80px;
 }
