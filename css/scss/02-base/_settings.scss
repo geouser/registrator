@@ -31,3 +31,40 @@ h2 {
 section {
     padding: 60px 0 80px;
 }
+
+
+
+
+/*icons*/
+
+.icon-alarm, .icon-calendar, .icon-clock, .icon-docs, .icon-hand, 
+.icon-humer, .icon-lock, .icon-man, .icon-pin, .icon-rub, 
+.icon-shield, .icon-stamp, .icon-alarm:hover, .icon-calendar:hover, .icon-clock:hover, 
+.icon-docs:hover, .icon-hand:hover, .icon-humer:hover, .icon-lock:hover, .icon-man:hover, 
+.icon-pin:hover, .icon-rub:hover, .icon-shield:hover, .icon-stamp:hover
+{ display: inline-block; background: url('../images/icons.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+ 
+.icon-alarm             { background-position: -4px -0px; width: 54px; height: 61px; }
+.icon-calendar          { background-position: -4px -65px; width: 54px; height: 61px; }
+.icon-clock             { background-position: -4px -130px; width: 54px; height: 61px; }
+.icon-docs              { background-position: -4px -195px; width: 54px; height: 61px; }
+.icon-hand              { background-position: -4px -260px; width: 54px; height: 61px; }
+.icon-humer             { background-position: -4px -325px; width: 54px; height: 61px; }
+.icon-lock              { background-position: -4px -390px; width: 54px; height: 61px; }
+.icon-man               { background-position: -4px -455px; width: 54px; height: 61px; }
+.icon-pin               { background-position: -4px -520px; width: 54px; height: 61px; }
+.icon-rub               { background-position: -4px -585px; width: 54px; height: 61px; }
+.icon-shield            { background-position: -4px -650px; width: 54px; height: 61px; }
+.icon-stamp             { background-position: -4px -715px; width: 54px; height: 61px; }
+.icon-alarm:hover       { background-position: -3px -779px;  width: 54px; height: 61px; }
+.icon-calendar:hover    { background-position: -3px -842px;  width: 54px; height: 61px; }
+.icon-clock:hover       { background-position: -3px -905px;  width: 54px; height: 61px; }
+.icon-docs:hover        { background-position: -3px -968px;  width: 54px; height: 61px; }
+.icon-hand:hover        { background-position: -3px -1031px; width: 54px; height: 61px; }
+.icon-humer:hover       { background-position: -3px -1094px; width: 54px; height: 61px; }
+.icon-lock:hover        { background-position: -3px -1157px; width: 54px; height: 61px; }
+.icon-man:hover         { background-position: -3px -1220px; width: 54px; height: 61px; }
+.icon-pin:hover         { background-position: -3px -1283px; width: 54px; height: 61px; }
+.icon-rub:hover         { background-position: -3px -1346px; width: 54px; height: 61px; }
+.icon-shield:hover      { background-position: -3px -1409px; width: 54px; height: 61px; }
+.icon-stamp:hover       { background-position: -3px -1472px; width: 54px; height: 61px; }
