@@ -20,6 +20,13 @@ h2 {
     text-transform: uppercase;
     color: $purple;
     margin-bottom: 50px;
+    &.bigger {
+        font-size: 50px;
+        span {
+            display: block;
+            font-size: 25px;
+        }
+    }
 }
 
 // lAYOUT
@@ -43,7 +50,7 @@ section {
 .icon-shield, .icon-stamp, .icon-alarm:hover, .icon-calendar:hover, .icon-clock:hover, 
 .icon-docs:hover, .icon-hand:hover, .icon-humer:hover, .icon-lock:hover, .icon-man:hover, 
 .icon-pin:hover, .icon-rub:hover, .icon-shield:hover, .icon-stamp:hover
-{ display: inline-block; background: url('../images/icons.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+{ background: url('../images/icons.png') no-repeat; overflow: hidden;  text-align: left; }
  
 .icon-alarm             { background-position: -4px -0px; width: 54px; height: 61px; }
 .icon-calendar          { background-position: -4px -65px; width: 54px; height: 61px; }

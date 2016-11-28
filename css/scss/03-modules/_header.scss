@@ -192,6 +192,8 @@
         &__bottom {
             @include flex($justify: flex-end, $alignI : flex-start);
             width: 100%;
+            position: relative;
+            z-index: 2;
         }
         &__list {
             list-style-type: none;
