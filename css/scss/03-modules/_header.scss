@@ -97,6 +97,19 @@
 
 }
 
+.logo {
+    img {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 5px;
+    }
+    span {
+        display: inline-block;
+        vertical-align: top;
+        color: #FFF;
+        font: 18px $ssb;
+    }
+}
 
 .offerSlider {
     height: 580px;
