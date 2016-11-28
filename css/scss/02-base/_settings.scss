@@ -1,0 +1,23 @@
+
+// TYPOGRAPHIC
+// ---------------------------
+html,
+body {
+	height: 100%;
+}
+body {
+    font-family: $s;
+    font-size: 18px;
+    color: $purple;
+}
+a {
+    color: inherit;
+}
+
+// lAYOUT
+// ---------------------------
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
