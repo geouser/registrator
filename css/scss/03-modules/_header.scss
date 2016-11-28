@@ -1,8 +1,26 @@
          
 .mainHeader {
-    @include position(absolute, 0, auto, auto, 0);
+    @include position(fixed, 0, 0, auto, 0);
+    z-index: 100;
+    &__top {
+        background-color: $white;
+        .wrapper {
+            @include flex();
+        }
+    }
+    &__bottom {
+        padding-top: 16px;
+        .wrapper {
+            @include flex();
+        }
+    }
 }
 
+.motto {
+    font: 15px/16px $s;
+    color: #D1CBD4;
+    width: 46%;
+}
 
 /* ------------------------------------ */
 /*  NAV STYLES  */
@@ -13,12 +31,11 @@
             display: inline-block;
             vertical-align: middle;
             a {
-                line-height: 43px;
                 display: inline-block;
                 margin: 0 10px;
                 text-transform: uppercase;
                 color: $purple;
-                font: 14px $p;
+                font: 14px/43px $p;
             }
             &:first-of-type {
                 a {
@@ -78,4 +95,37 @@
         }
         /*..............end media.............*/
 
+}
+
+
+.offerSlider {
+    height: 580px;
+    padding-top: 60px;
+    background-image: url("../images/offer-bg.jpg");
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    .offer__slide {
+        height: 100%;
+        .wrapper {
+            height: 100%;
+            padding: 50px 0 40px;
+            @include flex($direction: column);
+            h2 {
+                font: 50px/45px $ssb;
+                color: #FFF;
+                margin-bottom: 0;
+                span {
+                    color: $pink;
+                    display: block;
+                    font: 35px/45px $ssb;
+                }
+            }
+            span {
+                font: 18px $s;
+                color: #FFF;
+            }
+        }
+    }
 }
