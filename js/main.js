@@ -7,6 +7,12 @@ window.params = {
 
 jQuery(document).ready(function($) {
 
+    $('.offerSlider').slick({
+        fade: true,
+        dots: false,
+        arrows: false
+    });
+
     /*---------------------------
                                   ADD CLASS ON SCROLL
     ---------------------------*/
