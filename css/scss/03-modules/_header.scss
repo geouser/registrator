@@ -2,6 +2,7 @@
 .mainHeader {
     @include position(fixed, 0, 0, auto, 0);
     z-index: 100;
+    @include transition(all, .2s);
     &__top {
         background-color: $white;
         position: relative;
@@ -18,13 +19,29 @@
             border-left: 20px solid transparent;
             border-right: 20px solid transparent;
             border-top: 10px solid $white;
+            @include transition(all, .2s);
         }
     }
     &__bottom {
         padding-top: 19px;
+        @include transition(all, .2s);
         .wrapper {
             @include flex();
         }
+    }
+    &.hasScrolled {
+        height: 43px;
+        .mainHeader__bottom {
+            opacity: 0;
+            visibility: hidden;
+        }
+        .mainHeader__top {
+            &:after {
+                opacity: 0;
+            }
+        }
+        -webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+                box-shadow: 0 0 10px rgba(0,0,0,.4);
     }
 }
 
@@ -152,6 +169,7 @@
     height: 587px;
     padding: 0;
     padding-top: 60px;
+    margin: 0;
     background-image: url("../images/offer-bg.jpg");
     background-position: 50% 50%;
     -webkit-background-size: cover;
