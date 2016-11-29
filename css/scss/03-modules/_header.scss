@@ -43,22 +43,64 @@
         -webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
                 box-shadow: 0 0 10px rgba(0,0,0,.4);
     }
+    @media (max-width: 1000px) {
+        width: 260px;
+        bottom: 0;
+        height: 100%;
+        overflow: scroll;
+        right: -260px;
+        background: #483B55;
+        left: auto;
+        -webkit-transition: 0.6s all 0s cubic-bezier(0, 0, 0.25, 1);
+            transition: 0.6s all 0s cubic-bezier(0, 0, 0.25, 1);
+        -webkit-box-shadow: 0 0 6px rgba(0,0,0,.4);
+                box-shadow: 0 0 6px rgba(0,0,0,.4);
+        &.active {
+            right: 0;
+        }
+        &__bottom {
+            .wrapper {
+                display: block;
+                text-align: center;
+            }
+        }
+        &__top {
+            .wrapper {
+                display: block;
+                text-align: center;
+                padding: 20px 0;
+            }
+        }
+    }
 }
 
 .motto {
     font: 15px/16px $s;
     color: #D1CBD4;
     width: 46%;
+    @media (max-width: 1000px) {
+        width: 100%;
+        padding: 0 10px;
+        color: #FFF;
+        margin: 30px auto;
+    }
 }
 
 /* ------------------------------------ */
 /*  NAV STYLES  */
 .mainNav {
+    display: block;
     ul {
         list-style-type: none;
+        @media (max-width: 1000px) {
+            width: 100%;
+        }
         li {
             display: inline-block;
             vertical-align: middle;
+            @media (max-width: 1000px) {
+                display: block;
+            }
             a {
                 display: inline-block;
                 margin: 0 10px;
@@ -82,6 +124,13 @@
                 &.active:before {
                     opacity: 1;
                 }
+                @media (max-width: 1000px) {
+                    display: block;
+                    margin: 0 20px;
+                    &:before {
+                        display: none;
+                    }
+                }
             }
             &:first-of-type {
                 a {
@@ -91,6 +140,18 @@
             &:last-of-type {
                 a {
                     margin-right: 0;
+                }
+            }
+            @media (max-width: 1000px) {
+                &:first-of-type {
+                    a {
+                        margin: 0 20px;
+                    }
+                }
+                &:last-of-type {
+                    a {
+                        margin: 0 20px;
+                    }
                 }
             }
         }
@@ -113,30 +174,34 @@
 
 .menu-button     {    
     display: none;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     @include position(fixed, 15px, 15px, auto, auto);
     margin: auto; 
     cursor: pointer;
     z-index: 100;
-    background-color: salmon;
+    background-color: $pink;
     border: none;
+    -webkit-transition: 0.6s all 0s cubic-bezier(0, 0, 0.25, 1);
+            transition: 0.6s all 0s cubic-bezier(0, 0, 0.25, 1);
     -webkit-border-radius: 4px;
             border-radius: 4px;
     .menu-line {
         display: block;
         @include position(absolute, auto, 0, auto, 0);
         width: 60%;
-        height: 5px;
+        height: 3px;
         background-color: #fff;
         -webkit-border-radius: 1px;
         border-radius: 1px;
         @include transition(all, .4s);
     }
-
-    .top_line              {   top: 12px;  margin: auto;}
-    .middle_line           {   top: 22px;  margin: auto;}
-    .bottom_line           {   bottom: 12px; margin: auto;}
+    &.active {
+        right: 280px;
+    }
+    .top_line              {   top: 8px;  margin: auto;}
+    .middle_line           {   top: 19px;  margin: auto;}
+    .bottom_line           {   bottom: 8px; margin: auto;}
 
     &.active               {   -webkit-border-radius: 6px; border-radius: 6px;}
     &.active .top_line     {   @include transform(rotate(45deg)); top: 45%;}
@@ -144,7 +209,7 @@
     &.active .middle_line  {   width: 0; left: 50%;}
 
         /*.................media.............*/
-        @include m800 {
+        @include m1000 {
             display: block;
         }
         /*..............end media.............*/
@@ -162,6 +227,9 @@
         vertical-align: top;
         color: #FFF;
         font: 20px $ssb;
+    }
+    @include m1000 {
+        margin: 30px auto;
     }
 }
 

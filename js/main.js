@@ -38,9 +38,11 @@ jQuery(document).ready(function($) {
         $(this).toggleClass('active');
         $(this).siblings('header').toggleClass('active');
         if ($('header').hasClass('active')) {
-                $('body, html').css('overflow', 'hidden');
+                $('body').css('overflow', 'hidden');
+                $('section').css('filter', 'blur(2px)');
             } else {
-                $('body, html').css('overflow', 'auto');
+                $('body').css('overflow', 'auto');
+                $('section').css('filter', 'none');
             }
     });
 
