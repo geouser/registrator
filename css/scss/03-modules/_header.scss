@@ -64,6 +64,7 @@
             .wrapper {
                 display: block;
                 text-align: center;
+                padding-bottom: 20px;
             }
         }
         &__top {
@@ -260,6 +261,9 @@
             padding: 49px 0 40px;
             position: relative;
             @include flex($direction: column);
+            @media (max-width: 1030px) {
+                padding: 49px 15px 40px;
+            }
             @media (max-width: 700px) {
                 display: block;
                 padding: 60px 15px 40px;
