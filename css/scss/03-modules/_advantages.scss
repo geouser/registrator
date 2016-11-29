@@ -12,6 +12,15 @@
         padding: 0 50px;
         margin-bottom: 20px;
         text-align: center;
+        @include m1000 {
+            padding: 0 20px;
+        }
+        @media (max-width: 760px) {
+            width: 50%;
+        }
+        @media (max-width: 500px) {
+            width: 100%;
+        }
         i {
             display: block;
             margin: 0 auto 4px;
@@ -54,6 +63,9 @@
     line-height: 35px;
     position: relative;
     display: inline-block;
+    @include m1000 {
+        font-size: 16px;
+    }
     &:before {
         content: '';
         display: block;
@@ -78,5 +90,8 @@
         font-style: normal;
         color: #FF2762;
         font: 25px $sb;
+        @include m1000 {
+            font-size: 18px;
+        }
     }
 }
