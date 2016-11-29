@@ -96,3 +96,19 @@ section {
 .icon-rub:hover         { background-position: -3px -1346px; width: 54px; height: 61px; }
 .icon-shield:hover      { background-position: -3px -1409px; width: 54px; height: 61px; }
 .icon-stamp:hover       { background-position: -3px -1472px; width: 54px; height: 61px; }
+
+
+
+
+/*inputs*/
+input {
+    width: 100%;
+    height: 42px;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 0;
+    padding: 0 20px;
+    font-size: 16px;
+    font-family: $s;
+    color: $purple;
+}

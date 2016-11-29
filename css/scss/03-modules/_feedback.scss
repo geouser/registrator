@@ -1,0 +1,42 @@
+.feedback-form {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    &.questions {
+        background-image: url(../images/questions.jpg);
+    }
+
+    &.order {
+        background-image: url(../images/order.jpg);
+
+        h2 {
+            font-size: 50px;
+        }
+    }
+
+
+
+    h2 {
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        font-size: 25px;
+        color: $pink;
+        font-family: $ssb;
+        margin-bottom: 50px;
+    }
+
+
+    form {
+        @include flex();
+        margin: 0 -13px;
+
+        .form-group {
+            width: 25%;
+            padding: 0 13px;
+        }
+    }
+}

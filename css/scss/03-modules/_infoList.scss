@@ -1,5 +1,44 @@
+.registerSection {
+    padding-bottom: 40px;
+
+    &.changes {
+        padding-bottom: 80px;
+        background-image: url(../images/grey_map.jpg);
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-family: $ssb;
+            color: $pink;
+            font-size: 25px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+
+            & + small {
+                font-size: 25px;
+                font-family: $ssb;
+                margin-bottom: 35px;
+                display: block;
+            }
+        }
+
+        .decorated {
+            font-size: 18px;
+        }
+
+        .has-devider:after {
+            background-color: #B3B3BD;
+        }
+    }
+}
+
 .listsWrap {
-    @include flex($alignI: flex-start);
+    @include flex($alignI: stretch);
     position: relative;
     &:before {
         content: "";
@@ -34,6 +73,7 @@
     &__wrap {
         padding: 28px 14px 28px 18px;
         background-color: #f9f9f9;
+        height: 100%;
         .decorated {
             margin-bottom: 30px;
         }
@@ -82,6 +122,7 @@
     display: block;
     margin-bottom: 10px;
     text-align: center;
+    font-family: $ssb;
     &:before {
         content: "";
         width: 20px;
