@@ -1,5 +1,5 @@
 .footer {
-    padding: 12px;
+    padding: 12px 0;
     background-color: $grey;
 
     .row {
@@ -27,5 +27,14 @@
     &__copyright {
         text-align: right;
         font-size: 16px;
+    }
+
+    @media ($phones) {
+        &__logo,
+        &__copyright {
+            width: 100%;
+            text-align: center;
+            margin: 5px 0;
+        }
     }
 }

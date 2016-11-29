@@ -9,10 +9,18 @@
     &__address,
     &__phone {
         width: 50%;
+
+        @media ($phones) {
+            width: 100%;
+        }
     }
 
     &__address {
         text-align: left;
+
+        @media ($phones) {
+            text-align: center;
+        }
 
         a {
             text-decoration: underline;
@@ -25,6 +33,10 @@
 
     &__phone {
         text-align: right;
+
+        @media ($phones) {
+            text-align: center;
+        }
 
         p:not(:last-child) {
             margin-bottom: 10px;
@@ -62,6 +74,10 @@
         top: 0;
         left: 50%;
         margin-left: -4px;
+
+        @media ($phones) {
+            display: none;
+        }
     }
 
     &:after {
@@ -73,5 +89,9 @@
         position: absolute;
         left: 50%;
         margin-left: -0.5px;
+
+        @media ($phones) {
+            display: none;
+        }
     }
 }

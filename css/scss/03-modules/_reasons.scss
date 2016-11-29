@@ -13,6 +13,18 @@
         width: 25%;
         margin-bottom: 40px;
 
+        @media ($tablets) {
+            width: 33.333%;
+        }
+
+        @media ($phones) {
+            width: 50%;
+        }
+
+        @media (max-width: 430px) {
+            width: 100%;
+        }
+
         i {
             display: block;
             margin: 0 auto 8px;
@@ -49,6 +61,7 @@
             img {
                 -webkit-filter: grayscale(0);
                 filter: grayscale(0);
+                cursor: pointer;
             }
         }
     }
