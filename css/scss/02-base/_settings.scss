@@ -34,6 +34,18 @@ h2 {
             display: block;
             font-size: 25px;
         }
+        @media (max-width: 1000px) {
+            font-size: 40px;
+            span {
+                font-size: 20px;
+            }
+        }
+        @media (max-width: 600px) {
+            font-size: 32px;
+            span {
+                font-size: 16px;
+            }
+        }
     }
 }
 
