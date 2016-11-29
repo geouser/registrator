@@ -1,3 +1,8 @@
+.popup {
+    margin: 0 auto;
+    width: 285px;
+}
+
 .form {
     width: 285px;
      background-color: $white;
@@ -8,12 +13,18 @@
     span {
         margin-bottom: 27px;
         font: 22px $sb;
-        color: #3F3A3A;
+        color: $purple;
+        text-transform: uppercase;
+        display: block;
     }
     input {
         display: block;
         width: 100%;
         margin-bottom: 10px;
         color: $purple;
+    }
+    .button {
+        width: 100%;
+        margin-top: 15px;
     }
 }

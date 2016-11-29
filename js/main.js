@@ -50,6 +50,38 @@ jQuery(document).ready(function($) {
     /*---------------------------
                                   Scroll down
     ---------------------------*/
+    $('.mainNav a, .offer__slide__list a').on('click', function(event) {
+        event.preventDefault();
+        var target = $('' + $(this).attr('href') + '');
+        $('.mainNav a').removeClass('active');
+        $(this).addClass('active');
+        $('html, body').animate( { scrollTop: target.offset().top }, 800 );
+
+        if( $(window).width() < 1000 ) {
+            $('header, .menu-button').removeClass('active');
+            $('body').css('overflow', 'auto');
+            $('section').css('filter', 'none');
+        }
+    });
+
+    var $sections = $('section');
+    $(window).scroll(function(){
+        var currentScroll = $(this).scrollTop();
+        var $currentSection;
+        var windowHalf = $(window).height() / 2;
+        
+        $sections.each(function(){
+          var divPosition = $(this).offset().top - windowHalf;
+          
+          if( divPosition - 1 < currentScroll ){
+            $currentSection = $(this);
+          }
+        var id = $currentSection.attr('id');
+          $('a').removeClass('active');
+          $("[href=#"+id+"]").addClass('active');
+        })
+    });
+
     $('.scroll-down').on('click', function(event) {
         event.preventDefault();
         var target = $(this).parent().next();
