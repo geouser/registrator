@@ -63,7 +63,33 @@ jQuery(document).ready(function($) {
         dots: false,
         arrows: true,
         slidesToShow: 5,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 630,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 430,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     })
 
 
@@ -85,6 +111,35 @@ jQuery(document).ready(function($) {
         midClick: true,
         removalDelay: 300,
         mainClass: 'my-mfp-slide-bottom'
+    });
+
+
+    /*---------------------------
+                                  Magnific gallery
+    ---------------------------*/
+    $('.charther-slider').magnificPopup({
+        delegate: '.slide',
+        type: 'image',
+        closeOnContentClick: false,
+        closeBtnInside: false,
+        fixedContentPos: false,
+        fixedBgPos: true,
+        overflowY: 'auto',
+        mainClass: 'mfp-with-zoom mfp-img-mobile',
+        image: {
+            verticalFit: true,
+        },
+        gallery: {
+            enabled: true
+        },
+        zoom: {
+            enabled: true,
+            duration: 300, // don't foget to change the duration also in CSS
+            opener: function(element) {
+                return element.find('img');
+            }
+        }
+        
     });
 
 

@@ -34,9 +34,24 @@
         @include flex();
         margin: 0 -13px;
 
+        @media ($phones) {
+            width: 290px;
+            margin: 0 auto -15px;
+        }
+
         .form-group {
             width: 25%;
             padding: 0 13px;
+
+            @media ($phones) {
+                width: 100%;
+                margin-bottom: 15px;
+                padding: 0;
+            }
+
+            .button {
+                width: 100%;
+            }
         }
     }
 }

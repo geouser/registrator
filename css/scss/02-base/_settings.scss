@@ -20,6 +20,11 @@ h2 {
     text-transform: uppercase;
     color: $purple;
     margin-bottom: 50px;
+
+    @media ($phones) {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
     &.bigger {
         font-size: 50px;
         span {
@@ -35,6 +40,11 @@ h2 {
 	width: 1000px;
 	margin: 0 auto;
 	text-align: center;
+
+    @media ($tablets) {
+        width: 100%;
+        padding: 0 15px;
+    }
 }
 section {
     padding: 60px 0 80px;
