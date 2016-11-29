@@ -24,9 +24,8 @@ h2 {
     color: $purple;
     margin-bottom: 50px;
 
-    @media ($phones) {
+    @media (max-width: 600px) { 
         font-size: 30px;
-        margin-bottom: 30px;
     }
     &.bigger {
         font-size: 50px;
