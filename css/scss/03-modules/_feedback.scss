@@ -12,6 +12,14 @@
 
         h2 {
             font-size: 50px;
+
+            @media ($phones) {
+                font-size: 30px;
+
+                br {
+                    display: none;
+                }
+            }
         }
     }
 
@@ -27,6 +35,11 @@
         color: $pink;
         font-family: $ssb;
         margin-bottom: 50px;
+
+        @media ($phones) {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
     }
 
 
