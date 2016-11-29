@@ -243,6 +243,10 @@
     -webkit-background-size: cover;
          -o-background-size: cover;
             background-size: cover;
+    @media (max-width: 700px) {
+        height: auto;
+        padding-top: 0;
+    }
     .slick-list,
     .slick-track {
         height: 100%;
@@ -254,6 +258,10 @@
             padding: 49px 0 40px;
             position: relative;
             @include flex($direction: column);
+            @media (max-width: 700px) {
+                display: block;
+                padding: 60px 15px 40px;
+            }
             h2 {
                 font: 50px/45px $ssb;
                 color: #FFF;
@@ -262,17 +270,54 @@
                     color: $pink;
                     display: block;
                     font: 35px/45px $ssb;
+                    @media (max-width: 1000px) {
+                        font-size: 28px;
+                        line-height: 36px;
+                    }
+                    @media (max-width: 700px) {
+                        font-size: 24px;
+                        line-height: 32px;
+                    }
+                    @media (max-width: 560px) {
+                        font-size: 20px;
+                    }
+                    @media (max-width: 360px) {
+                        font-size: 18px;
+                    }
+                }
+                @media (max-width: 1000px) {
+                    font-size: 40px;
+                    line-height: 36px;
+                }
+                @media (max-width: 700px) {
+                    font-size: 32px;
+                    line-height: 32px;
+                }
+                @media (max-width: 560px) {
+                    font-size: 28px;
+                }
+                @media (max-width: 360px) {
+                    font-size: 24px;
                 }
             }
             > div > span {
                 font: 18px $s;
                 color: #FFF;
                 margin-top: 8px;
+                @media (max-width: 700px) {
+                    font-size: 16px;
+                }
+                 @media (max-width: 360px) {
+                    font-size: 14px;
+                }
             }
             .offer__slide__bg {
                 position: absolute;
                 bottom: 0;
                 left: 0;
+                @media (max-width: 1000px) {
+                    opacity: .6;
+                }
             }
         }
         &__bottom {
@@ -280,21 +325,46 @@
             width: 100%;
             position: relative;
             z-index: 2;
+            @media (max-width: 1000px) {
+                -webkit-justify-content: center;
+                        justify-content: center;
+            }
+            @media (max-width: 700px) {
+                margin-top: 40px;
+            }
+            @media (max-width: 560px) {
+                display: block;
+            }
         }
         &__list {
             list-style-type: none;
             margin-right: 64px;
             position: relative;
             padding-top: 17px;
+            @media (max-width: 560px) {
+                display: block;
+                margin: 0 auto 40px;
+                width: 250px;
+            }
             li {
                 display: block;
                 padding-right: 10px;
                 position: relative;
                 margin-bottom: 13px;
                 text-align: right;
+                @media (max-width: 560px) {
+                    padding-right: 15px;
+                }
                 a {
                     color: #FFF;
                     font: 18px $s;
+                    @media (max-width: 1000px) {
+                        text-shadow: 0 0 4px #000, 0 0 4px #000;
+                    }
+                    @media (max-width: 560px) {
+                        font-size: 16px;
+                        text-shadow: none;
+                    }
                 }
                 &:after {
                     content: "";
@@ -312,6 +382,13 @@
                        -moz-box-sizing: border-box;
                             box-sizing: border-box;
                     z-index: 2;
+                    @media (max-width: 1000px) {
+                        border: none;
+                        width: 10px;
+                        height: 10px;
+                        top: 6px;
+                        right: -5px;
+                    }
                 }
                 &:hover {
                     &:after {
@@ -340,16 +417,31 @@
     -webkit-border-radius: 4px;
             border-radius: 4px;
     width: 280px;
+    @media (max-width: 700px) {
+        width: 260px;
+        padding: 20px 16px 30px;
+    }
+    @media (max-width: 560px) {
+        display: block;
+        margin: 0 auto;
+    }
     p {
         margin-bottom: 33px;
         font: 17px $s;
         color: #3F3A3A;
+        @media (max-width: 700px) {
+            font-size: 15px;
+            margin-bottom: 25px;
+        }
         span {
             display: block;
             font: 22px $sb;
             color: $purple;
             text-transform: uppercase;
             margin-bottom: 6px;
+            @media (max-width: 700px) {
+                font-size: 20px;
+            }
         }
     }
 }
